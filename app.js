@@ -35,7 +35,7 @@ var addCard = function() {
     }]
     // Once the user input is received...//
     }]).then(function(answer) {
-        if(answer.cardType === 'Basic-Flashcard') {
+        if (answer.cardType === 'Basic-Flashcard') {
             inquirer.prompt ([{
                 name: 'front',
                 message: 'Was is der Frage?',
@@ -47,7 +47,8 @@ var addCard = function() {
                         return true;
                     }
                 }
-            },{
+            },
+            {
                 name: 'back',
                 message: 'Was ist der Antwort?',
                 validate: function(input) {
@@ -63,7 +64,7 @@ var addCard = function() {
                 newBasic.create();
                 whatsNext();
             });
-        } else if (answer.cardType === "Cloze-flashcard") {
+        } else if (answer.cardType === "Cloze-Flashcard") {
             inquirer.prompt([{
                 name: 'text',
                 message: 'Was ist der Volltext?',
@@ -78,7 +79,7 @@ var addCard = function() {
             },
         {
             name: 'cloze',
-            message: 'Was ist der "cloze" Portion?',
+            message: 'Was ist der "Cloze" Portion?',
             validate: function(input) {
                 if(input === '') {
                     console.log('Bitte stellen Sie der cloze Portion');
@@ -109,14 +110,11 @@ var whatsNext = function() {
         message: 'Was willst du nächste tun?',
         type: 'list',
         choices: [{
-
-        },
-    {
         name: "Neue-Karte-erstellen",
-    },
-    {
+},
+{
         name: 'Alle-Karte-anzeigen',
-    },
+},
 {
     name: "nichts",
 }]

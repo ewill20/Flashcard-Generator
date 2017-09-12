@@ -1,1 +1,1 @@
-{"front":"How many days in one year?","back":"365","type":"basic"};{"front":"What color is blood?","back":"red","type":"basic"};
+{"front":"How many days in one year?","back":"365","type":"basic"};{"front":"What color is blood?","back":"red","type":"basic"};{"front":"Who is the Orange God?","back":"Trump","type":"basic"};{"front":"Who is the Orange God?","back":"Trump","type":"basic"};{"front":"What are Cameron's Initials?","back":"CCC","type":"basic"};
