@@ -49,7 +49,7 @@ var addCard = function() {
                 }
             },{
                 name: 'back',
-                message: 'Was ist der Frage?',
+                message: 'Was ist der Antwort?',
                 validate: function(input) {
                     if(input === '') {
                         console.log("Bitte stellen Sie eine Antworten");
@@ -63,7 +63,7 @@ var addCard = function() {
                 newBasic.create();
                 whatsNext();
             });
-        } else if (answer.cardType === 'cloze-flashcard') {
+        } else if (answer.cardType === "Cloze-flashcard") {
             inquirer.prompt([{
                 name: 'text',
                 message: 'Was ist der Volltext?',
